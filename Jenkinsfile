@@ -12,8 +12,8 @@ pipeline {
         stage('Run Script') {
             steps {
                 sh '''
-                    chmod +x hello.sh
-                    ./hello.sh
+             echo "Testing Jenkins failure..."
+             exit 1
                 '''
             }
         }
